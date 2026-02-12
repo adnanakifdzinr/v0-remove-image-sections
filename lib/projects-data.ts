@@ -59,8 +59,8 @@ export const projectsData: Project[] = [
   },
   {
     id: "2",
-    title: "Luvena",
-    category: "Logo & Branding",
+    title: "KRINK",
+    category: "Logo & Packaging",
     industry: "FOOD & BEVERAGE",
     image: "https://bq45eawil9xlp5ci.public.blob.vercel-storage.com/Luvena01.jpg",
     slug: "luvena",
@@ -99,8 +99,8 @@ export const projectsData: Project[] = [
   },
   {
     id: "3",
-    title: "Rijq",
-    category: "Food & Bakery",
+    title: "KRINK",
+    category: "Logo & Packaging",
     industry: "BAKERY",
     image: "https://q4bkxvdmgiqmmhbe.public.blob.vercel-storage.com/Frame%201.jpg",
     slug: "rijq",
@@ -139,8 +139,8 @@ export const projectsData: Project[] = [
   },
   {
     id: "4",
-    title: "Cnyf",
-    category: "Crypto",
+    title: "KRINK",
+    category: "Logo & Packaging",
     industry: "CRYPTO",
     image: "https://guxjkdyjeyrscewv.public.blob.vercel-storage.com/Frame%208.jpg",
     slug: "cnyf",
@@ -180,7 +180,7 @@ export const projectsData: Project[] = [
   {
     id: "5",
     title: "KRINK",
-    category: "Crypto",
+    category: "Logo & Packaging",
     industry: "CRYPTO",
     image: "https://guxjkdyjeyrscewv.public.blob.vercel-storage.com/Frame%208.jpg",
     slug: "cnyf",
