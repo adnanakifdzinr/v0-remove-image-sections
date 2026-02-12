@@ -6,6 +6,7 @@ import { HeroCTASection } from "@/components/hero-cta-section"
 import { BrandStrategySection } from "@/components/brand-strategy-section"
 import { BrandClaritySection } from "@/components/brand-clarity-section"
 import { WhyChooseUsSection } from "@/components/why-choose-us-section"
+import { Separator } from "@/components/ui/separator"
 
 export const metadata: Metadata = {
   title: "Lozinr | Logo & Brand Identity Design Agency",
@@ -73,16 +74,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Separator className="w-full h-px" />
       <BrandStrategySection />
+      <Separator className="w-full h-px" />
       <BrandClaritySection />
+      <Separator className="w-full h-px" />
       <div className="relative bg-background">
         <section id="work">
           <ProjectThumbnails />
         </section>
+        <Separator className="w-full h-px" />
         <section id="services">
           <ServicesSection />
         </section>
+        <Separator className="w-full h-px" />
         <WhyChooseUsSection />
+        <Separator className="w-full h-px" />
       </div>
     </main>
   )
