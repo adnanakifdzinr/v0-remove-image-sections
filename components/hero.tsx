@@ -95,7 +95,7 @@ export function Hero() {
       `}</style>
 
       {/* Unified Hero for all devices */}
-      <div className="flex pt-90 md:pt-70 lg:pt-70 pb-80 md:pb-90 lg:pb-100 items-center justify-between overflow-hidden w-full" ref={svgContainerRef}>
+      <div className="flex pt-90 md:pt-70 lg:pt-70 pb-80 md:pb-90 lg:pb-100 items-center justify-between overflow-hidden w-full hero-slide-up" ref={svgContainerRef}>
         <div className="w-full overflow-visible origin-center px-3 md:px-5 lg:px-8">
           <h1 className="text-[42px] md:text-[80px] lg:text-[120px] xl:text-[160px] 2xl:text-[196px] font-medium text-black leading-[0.9] sm:leading-[0.85] md:leading-[0.8] tracking-tighter text-left sm:text-left w-full break-words">
             Brands,
