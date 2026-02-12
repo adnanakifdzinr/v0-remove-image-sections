@@ -45,6 +45,7 @@ export const projectsData: Project[] = [
       "Brand Guidelines",
     ],
     images: [
+      "https://simontype.com/wp-content/uploads/2026/02/KRINK-01.jpeg",
       "https://j918kna7hvf0qlsi.public.blob.vercel-storage.com/Frame%201.jpg",
       "https://j918kna7hvf0qlsi.public.blob.vercel-storage.com/Frame%202.jpg",
       "https://j918kna7hvf0qlsi.public.blob.vercel-storage.com/Frame%203.jpg",
