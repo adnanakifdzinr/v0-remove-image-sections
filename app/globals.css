@@ -616,5 +616,14 @@
 }
 
 .hero-slide-up {
-  animation: heroSlideUp 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: heroSlideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.hero-slide-up {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.hero-slide-up {
+  animation: heroSlideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }

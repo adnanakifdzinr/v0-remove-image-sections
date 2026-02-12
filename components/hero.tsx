@@ -1,10 +1,22 @@
 "use client"
 
-import { useRef } from "react"
+import { useRef, useEffect } from "react"
 
 export function Hero() {
   const heroRef = useRef(null)
   const svgContainerRef = useRef(null)
+
+  useEffect(() => {
+    // Trigger animation on mount
+    if (svgContainerRef.current) {
+      svgContainerRef.current.style.animation = "none"
+      setTimeout(() => {
+        if (svgContainerRef.current) {
+          svgContainerRef.current.style.animation = ""
+        }
+      }, 10)
+    }
+  }, [])
 
   return (
     <section
