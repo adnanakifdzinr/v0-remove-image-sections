@@ -14,18 +14,11 @@ export function BrandStrategySection() {
           </h2>
         </div>
 
-        {/* Bottom Section: Image and Text */}
+        {/* Bottom Section: Image Placeholder and Text */}
         <div className="grid grid-cols-1 md:grid-cols-10 gap-6 md:gap-8 lg:gap-12">
-          {/* Left Column - Image (30% on desktop, 100% on mobile) */}
+          {/* Left Column - Image Placeholder (30% on desktop, 100% on mobile) */}
           <div className="md:col-span-3 flex items-start">
             <div className="w-full relative aspect-[3/4] md:aspect-auto md:h-96">
-              <Image
-                src="/images/demo.jpg"
-                alt="Brand Strategy Design"
-                fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, 30vw"
-              />
             </div>
           </div>
 

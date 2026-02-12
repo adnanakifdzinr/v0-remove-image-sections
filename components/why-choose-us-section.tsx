@@ -57,15 +57,8 @@ export function WhyChooseUsSection() {
                   </h3>
                 </div>
 
-                {/* Image for Mobile and Desktop */}
+                {/* Image Placeholder for Mobile and Desktop */}
                 <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden">
-                  <Image
-                    src={process.image || "/placeholder.svg"}
-                    alt={process.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
                 </div>
               </div>
 

@@ -23,15 +23,8 @@ export function BrandClaritySection() {
           </h2>
         </div>
 
-        {/* Mobile Image - appears below headline */}
+        {/* Mobile Image Placeholder - appears below headline */}
         <div className="md:hidden w-full relative h-80 mb-8 flex flex-col items-center">
-          <Image
-            src="/images/trade-org-mockup.png"
-            alt="Trade Organization Website Design"
-            fill
-            className="object-contain"
-            sizes="100vw"
-          />
         </div>
 
         {/* Bottom Section with 70/30 Layout */}
@@ -71,15 +64,8 @@ export function BrandClaritySection() {
             </div>
           </div>
 
-          {/* Right Side - 30% Image (Desktop only) */}
+          {/* Right Side - 30% Image Placeholder (Desktop only) */}
           <div className="hidden md:flex w-full md:col-span-3 relative h-96 flex-col items-center md:items-stretch md:h-full">
-            <Image
-              src="/images/trade-org-mockup.png"
-              alt="Trade Organization Website Design"
-              fill
-              className="object-contain"
-              sizes="30vw"
-            />
           </div>
         </div>
       </div>
