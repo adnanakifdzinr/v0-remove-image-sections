@@ -61,7 +61,7 @@ export function WebOpenAnimation() {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-black font-medium text-[16px] whitespace-nowrap"
+                className="text-white font-medium text-[16px] whitespace-nowrap"
               >
                 Enter Now
               </motion.span>
