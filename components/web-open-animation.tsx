@@ -66,25 +66,28 @@ export function WebOpenAnimation() {
                 Enter Now
               </motion.span>
 
-              {/* Arrow container */}
-              <div className="flex items-center justify-center ml-3 relative h-10">
-                {/* Main arrow - moves up on hover */}
+              {/* Arrow container - fixed position inside button */}
+              <div className="flex items-center justify-center relative w-12 h-10">
+                {/* Main arrow - exits right on hover */}
                 <motion.div
-                  animate={{ y: isHovering ? -10 : 0 }}
+                  animate={{
+                    x: isHovering ? 40 : 0,
+                    opacity: isHovering ? 0 : 1
+                  }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="absolute w-10 h-10 rounded-full bg-white border-2 border-white flex items-center justify-center"
+                  className="absolute w-10 h-10 rounded-full bg-white flex items-center justify-center"
                 >
                   <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
                 </motion.div>
 
-                {/* Secondary arrow - appears from bottom on hover */}
+                {/* Secondary arrow - enters from left on hover */}
                 <motion.div
                   animate={{
-                    y: isHovering ? -10 : 10,
+                    x: isHovering ? 0 : -40,
                     opacity: isHovering ? 1 : 0
                   }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="absolute w-10 h-10 rounded-full bg-white border-2 border-white flex items-center justify-center"
+                  className="absolute w-10 h-10 rounded-full bg-white flex items-center justify-center"
                 >
                   <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
                 </motion.div>
