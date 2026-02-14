@@ -48,13 +48,13 @@ export function WebOpenAnimation() {
           <div className="fixed inset-0 flex items-center justify-center" style={{ zIndex: 9999 }}>
             <motion.button
               initial={{ width: '80px' }}
-              animate={{ width: isHovering ? '280px' : '200px' }}
+              animate={{ width: isHovering ? '360px' : '200px' }}
               exit={{ x: '150vw', opacity: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
               onHoverStart={() => setIsHovering(true)}
               onHoverEnd={() => setIsHovering(false)}
               onClick={handleEnter}
-              className="relative h-14 bg-transparent border-2 border-white rounded-full flex items-center justify-between px-4 gap-2 overflow-visible cursor-pointer focus:outline-none"
+              className="relative h-14 bg-transparent border-2 border-white rounded-full flex items-center justify-between px-4 gap-4 overflow-visible cursor-pointer focus:outline-none"
             >
               {/* Left text - visible immediately */}
               <motion.span
@@ -67,7 +67,7 @@ export function WebOpenAnimation() {
               </motion.span>
 
               {/* Arrow circle - static background */}
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden relative">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden relative">
                 {/* Main arrow - exits right on hover */}
                 <motion.div
                   animate={{
