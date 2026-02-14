@@ -73,7 +73,7 @@ export function WebOpenAnimation() {
                 className="flex items-center justify-center ml-2 relative"
               >
                 <div className="w-10 h-10 rounded-full bg-[#FF3C00] flex items-center justify-center">
-                  <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
+                  <ArrowRight className="w-5 h-5 text-white" strokeWidth={2.5} />
                 </div>
 
                 {/* Secondary arrow that appears from bottom */}
