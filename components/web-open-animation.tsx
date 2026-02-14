@@ -54,7 +54,7 @@ export function WebOpenAnimation() {
               onHoverStart={() => setIsHovering(true)}
               onHoverEnd={() => setIsHovering(false)}
               onClick={handleEnter}
-              className="relative h-14 bg-transparent border-3 border-white rounded-full flex items-center justify-between px-2 gap-3 overflow-visible cursor-pointer focus:outline-none"
+              className="relative h-14 bg-transparent border-3 border-white rounded-full flex items-center justify-between px-1.5 gap-3 overflow-visible cursor-pointer focus:outline-none"
             >
               {/* Left text - visible immediately */}
               <motion.span
