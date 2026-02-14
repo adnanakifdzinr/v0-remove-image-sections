@@ -48,7 +48,7 @@ export function WebOpenAnimation() {
           <div className="fixed inset-0 flex items-center justify-center" style={{ zIndex: 9999 }}>
             <motion.button
               initial={{ width: '80px' }}
-              animate={{ width: isHovering ? '280px' : '200px' }}
+              animate={{ width: isHovering ? '240px' : '200px' }}
               exit={{ x: '150vw', opacity: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
               onHoverStart={() => setIsHovering(true)}
