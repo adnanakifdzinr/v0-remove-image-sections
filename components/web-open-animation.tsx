@@ -54,7 +54,7 @@ export function WebOpenAnimation() {
               onHoverStart={() => setIsHovering(true)}
               onHoverEnd={() => setIsHovering(false)}
               onClick={handleEnter}
-              className="relative h-16 bg-white rounded-full flex items-center justify-between px-6 overflow-visible cursor-pointer focus:outline-none"
+              className="relative h-14 bg-white rounded-full flex items-center justify-between px-6 overflow-visible cursor-pointer focus:outline-none"
             >
               {/* Left text - visible immediately */}
               <motion.span
@@ -79,9 +79,9 @@ export function WebOpenAnimation() {
                 {/* Secondary arrow that appears from bottom */}
                 <motion.div
                   initial={{ y: 16, opacity: 0 }}
-                  animate={{ 
-                    y: isHovering ? 0 : 16, 
-                    opacity: isHovering ? 1 : 0 
+                  animate={{
+                    y: isHovering ? 0 : 16,
+                    opacity: isHovering ? 1 : 0
                   }}
                   transition={{ duration: 0.3, ease: 'easeOut' }}
                   className="absolute w-8 h-8 rounded-full bg-black/10 flex items-center justify-center"
