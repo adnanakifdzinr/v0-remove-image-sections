@@ -70,7 +70,7 @@ export function WebOpenAnimation() {
               <motion.div
                 animate={{ y: isHovering ? -12 : 0 }}
                 transition={{ duration: 0.3, ease: 'easeOut' }}
-                className="flex items-center justify-center ml-2 relative"
+                className="flex items-center justify-center ml-1 relative"
               >
                 <div className="w-10 h-10 rounded-full bg-[#FF3C00] flex items-center justify-center">
                   <ArrowRight className="w-5 h-5 text-white" strokeWidth={2.5} />
