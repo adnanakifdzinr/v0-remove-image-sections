@@ -31,7 +31,7 @@ export function WebOpenAnimation() {
             initial={{ y: 0 }}
             exit={{ y: '-100vh' }}
             transition={{ duration: 0.8, ease: 'easeInOut' }}
-            className="fixed top-0 left-0 right-0 h-1/2 bg-white/50 backdrop-blur-sm"
+            className="fixed top-0 left-0 right-0 h-1/2 bg-black/50 backdrop-blur-sm"
             style={{ zIndex: 9997 }}
           />
 
@@ -40,7 +40,7 @@ export function WebOpenAnimation() {
             initial={{ y: 0 }}
             exit={{ y: '100vh' }}
             transition={{ duration: 0.8, ease: 'easeInOut' }}
-            className="fixed bottom-0 left-0 right-0 h-1/2 bg-white/50 backdrop-blur-sm"
+            className="fixed bottom-0 left-0 right-0 h-1/2 bg-black/50 backdrop-blur-sm"
             style={{ zIndex: 9997 }}
           />
 
