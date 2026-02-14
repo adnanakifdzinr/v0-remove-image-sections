@@ -54,7 +54,7 @@ export function WebOpenAnimation() {
               onHoverStart={() => setIsHovering(true)}
               onHoverEnd={() => setIsHovering(false)}
               onClick={handleEnter}
-              className="relative h-14 bg-transparent border-2 border-white rounded-full flex items-center justify-between px-6 overflow-visible cursor-pointer focus:outline-none"
+              className="relative h-14 bg-transparent border-2 border-white rounded-full flex items-center justify-between px-4 overflow-visible cursor-pointer focus:outline-none"
             >
               {/* Left text - visible immediately */}
               <motion.span
@@ -70,7 +70,7 @@ export function WebOpenAnimation() {
               <motion.div
                 animate={{ y: isHovering ? -12 : 0 }}
                 transition={{ duration: 0.3, ease: 'easeOut' }}
-                className="flex items-center justify-center ml-1 relative"
+                className="flex items-center justify-center ml-2s relative"
               >
                 <div className="w-10 h-10 rounded-full bg-[#FF3C00] flex items-center justify-center">
                   <ArrowRight className="w-5 h-5 text-white" strokeWidth={2.5} />
