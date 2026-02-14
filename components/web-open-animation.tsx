@@ -66,8 +66,8 @@ export function WebOpenAnimation() {
                 Enter Now
               </motion.span>
 
-              {/* Arrow container - fixed position inside button */}
-              <div className="flex items-center justify-center relative w-12 h-10">
+              {/* Arrow circle - static background */}
+              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden relative">
                 {/* Main arrow - exits right on hover */}
                 <motion.div
                   animate={{
@@ -75,7 +75,7 @@ export function WebOpenAnimation() {
                     opacity: isHovering ? 0 : 1
                   }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="absolute w-10 h-10 rounded-full bg-white flex items-center justify-center"
+                  className="absolute"
                 >
                   <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
                 </motion.div>
@@ -87,7 +87,7 @@ export function WebOpenAnimation() {
                     opacity: isHovering ? 1 : 0
                   }}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="absolute w-10 h-10 rounded-full bg-white flex items-center justify-center"
+                  className="absolute"
                 >
                   <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
                 </motion.div>
