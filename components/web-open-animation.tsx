@@ -48,13 +48,13 @@ export function WebOpenAnimation() {
           <div className="fixed inset-0 flex items-center justify-center" style={{ zIndex: 9999 }}>
             <motion.button
               initial={{ width: '80px' }}
-              animate={{ width: isHovering ? '280px' : '200px' }}
+              animate={{ width: isHovering ? '240px' : '200px' }}
               exit={{ x: '150vw', opacity: 0 }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
               onHoverStart={() => setIsHovering(true)}
               onHoverEnd={() => setIsHovering(false)}
               onClick={handleEnter}
-              className="relative h-14 bg-transparent border-2 border-white rounded-full flex items-center justify-between px-4 gap-2 overflow-visible cursor-pointer focus:outline-none"
+              className="relative h-14 bg-transparent border-2 border-white rounded-full flex items-center justify-between px-3i said overflow-visible cursor-pointer focus:outline-none"
             >
               {/* Left text - visible immediately */}
               <motion.span
@@ -63,35 +63,32 @@ export function WebOpenAnimation() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="text-white font-medium text-[16px] whitespace-nowrap"
               >
-                Enter on website
+                Enter on
               </motion.span>
 
-              {/* Arrow circle - static background */}
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden relative">
-                {/* Main arrow - exits right on hover */}
-                <motion.div
-                  animate={{
-                    x: isHovering ? 40 : 0,
-                    opacity: isHovering ? 0 : 1
-                  }}
-                  transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="absolute"
-                >
-                  <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
-                </motion.div>
+              {/* Main arrow container */}
+              <motion.div
+                animate={{ y: isHovering ? -12 : 0 }}
+                transition={{ duration: 0.3, ease: 'easeOut' }}
+                className="flex items-center justify-center ml-2s relative"
+              >
+                <div className="w-10 h-10 rounded-full bg-[#FF3C00] flex items-center justify-center">
+                  <ArrowRight className="w-5 h-5 text-white" strokeWidth={2.5} />
+                </div>
 
-                {/* Secondary arrow - enters from left on hover */}
+                {/* Secondary arrow that appears from bottom */}
                 <motion.div
+                  initial={{ y: 16, opacity: 0 }}
                   animate={{
-                    x: isHovering ? 0 : -40,
+                    y: isHovering ? 0 : 16,
                     opacity: isHovering ? 1 : 0
                   }}
-                  transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="absolute"
+                  transition={{ duration: 0.3, ease: 'easeOut' }}
+                  className="absolute w-8 h-8 rounded-full bg-black/10 flex items-center justify-center"
                 >
-                  <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
+                  <ArrowRight className="w-4 h-4 text-black" strokeWidth={2.5} />
                 </motion.div>
-              </div>
+              </motion.div>
             </motion.button>
           </div>
         </>
