@@ -54,14 +54,14 @@ export function WebOpenAnimation() {
               onHoverStart={() => setIsHovering(true)}
               onHoverEnd={() => setIsHovering(false)}
               onClick={handleEnter}
-              className="relative h-14 bg-white rounded-full flex items-center justify-between px-6 overflow-visible cursor-pointer focus:outline-none"
+              className="relative h-14 bg-white/70 border-2 border-white rounded-full flex items-center justify-between px-6 overflow-visible cursor-pointer focus:outline-none"
             >
               {/* Left text - visible immediately */}
               <motion.span
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-black font-semibold text-sm whitespace-nowrap"
+                className="text-black font-medium text-[16px] whitespace-nowrap"
               >
                 Enter Now
               </motion.span>
