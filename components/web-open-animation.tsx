@@ -66,29 +66,29 @@ export function WebOpenAnimation() {
                 Enter Now
               </motion.span>
 
-              {/* Main arrow container */}
-              <motion.div
-                animate={{ y: isHovering ? -12 : 0 }}
-                transition={{ duration: 0.3, ease: 'easeOut' }}
-                className="flex items-center justify-center ml-2s relative"
-              >
-                <div className="w-10 h-10 rounded-full bg-[#FF3C00] flex items-center justify-center">
-                  <ArrowRight className="w-5 h-5 text-white" strokeWidth={2.5} />
-                </div>
-
-                {/* Secondary arrow that appears from bottom */}
+              {/* Arrow container */}
+              <div className="flex items-center justify-center ml-3 relative h-10">
+                {/* Main arrow - moves up on hover */}
                 <motion.div
-                  initial={{ y: 16, opacity: 0 }}
+                  animate={{ y: isHovering ? -10 : 0 }}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                  className="absolute w-10 h-10 rounded-full bg-white border-2 border-white flex items-center justify-center"
+                >
+                  <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
+                </motion.div>
+
+                {/* Secondary arrow - appears from bottom on hover */}
+                <motion.div
                   animate={{
-                    y: isHovering ? 0 : 16,
+                    y: isHovering ? -10 : 10,
                     opacity: isHovering ? 1 : 0
                   }}
-                  transition={{ duration: 0.3, ease: 'easeOut' }}
-                  className="absolute w-8 h-8 rounded-full bg-black/10 flex items-center justify-center"
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
+                  className="absolute w-10 h-10 rounded-full bg-white border-2 border-white flex items-center justify-center"
                 >
-                  <ArrowRight className="w-4 h-4 text-black" strokeWidth={2.5} />
+                  <ArrowRight className="w-5 h-5 text-black" strokeWidth={2.5} />
                 </motion.div>
-              </motion.div>
+              </div>
             </motion.button>
           </div>
         </>
