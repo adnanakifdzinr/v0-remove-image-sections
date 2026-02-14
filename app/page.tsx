@@ -7,6 +7,7 @@ import { BrandStrategySection } from "@/components/brand-strategy-section"
 import { BrandClaritySection } from "@/components/brand-clarity-section"
 import { WhyChooseUsSection } from "@/components/why-choose-us-section"
 import { Separator } from "@/components/ui/separator"
+import { WebOpenAnimation } from "@/components/web-open-animation"
 
 export const metadata: Metadata = {
   title: "Lozinr | Logo & Brand Identity Design Agency",
@@ -39,7 +40,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="relative bg-[#1A1A1A] transition-colors duration-300">
+    <>
+      <WebOpenAnimation />
+      <main className="relative bg-[#1A1A1A] transition-colors duration-300">
       {/* Hero SVG Section */}
       <section id="home" className="w-full lg:py-60 lg:px-8 py-30 px-3">
         <svg
@@ -92,5 +95,6 @@ export default function Home() {
         <Separator className="w-full h-px" />
       </div>
     </main>
+    </>
   )
 }
